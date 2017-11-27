@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.tcl.smartapp"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="8"
+          android:versionName="1.0.0.0.0007.0"
+          >
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".SmartApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/SplashActivityTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".SmartAppsManagerActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+<!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+-->
+        </activity>
+        <activity
+            android:name=".AppsLockActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SystemLockActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PicsVideoLockActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".token.DrawPwdActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"/>
+        <activity
+            android:name=".token.SetupPwdActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/draw_unlock_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.blue"/>
+        <activity
+            android:name=".token.JrdChooseLockPIN"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+            android:name=".token.PINPwdActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity
+            android:name=".PasswordSettingsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/settings_password_type"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SettingsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_settings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".token.RetrievePasswordActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".token.SecurityQuestionActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".token.EmailAuthenticationActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"/>
+
+        <!-- add WatchDogService on 20160420 -->
+        <activity
+            android:name=".TtsSettings"
+            android:excludeFromRecents="true"
+            android:label="@string/tts_settings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DisabledAppsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/text_disabled_app"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AppsListActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/text_disabled_app"
+            android:theme="@style/AppTheme.White"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".token.PINLockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"/>
+
+        <receiver
+            android:name=".receivers.SwitchEventReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.forbid.switcher.state"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.SMSBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".service.ObserverService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config">
+            </meta-data>
+        </service>
+        <service android:name=".service.BackToEncryptedService">
+        </service>
+
+        <activity
+            android:name=".EyeProtectActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:label="@string/protect_eye"
+            android:theme="@style/AppTheme.White"/>
+
+        <service android:name=".EyeProtectService"/>
+
+        <receiver
+            android:name=".receivers.PolicyAdminReceiver"
+            android:description="@string/description_device_admin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin"/>
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+                <action android:name="android.app.action.DEVICE_ADMIN_DISABLED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".WarningCameraActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_message_break_in_alerts"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.White"/>
+
+        <activity
+            android:name=".PicViewerActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_message_break_in_alerts"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.White"/>
+
+        <activity
+            android:name=".FeedbackActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".FeedbackReplyActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".FeedbackRecoderActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".AboutAppActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="573dcc1d67e58eb678001788" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng"/>
+
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="" />
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'574570ac'" />
+
+        <activity android:name="com.iflytek.autoupdate.IFlytekUpdateDialog"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            ></activity>
+
+        <service
+            android:name="com.iflytek.autoupdate.IFlytekDownloadService"
+            android:enabled="true"
+            android:process=":IFlytekDownloadService" />
+        <service
+            android:name=".service.BackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

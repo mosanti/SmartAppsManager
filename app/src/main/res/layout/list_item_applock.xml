@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip">
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:clickable="false"
+        android:src="@drawable/icon" />
+    <!-- app name  -->
+    <com.tcl.smartapp.utils.AlwaysMarqueeTextView
+        android:id="@+id/tv_app_name"
+        android:layout_height="wrap_content"
+        android:layout_width="200dip"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="@dimen/textMarginLeft"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:gravity="top"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:clickable="false"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_app_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:layout_marginLeft="@dimen/textMarginLeft"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:gravity="top"
+        android:layout_below="@+id/tv_app_name"
+        android:textColor="#FF757575"
+        android:textSize="10sp" />
+<!--
+    <ImageView
+        android:id="@+id/iv_applock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/unlock_new" />
+-->
+    <com.tcl.smartapp.view.SwitchButton
+        android:id="@+id/iv_applock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

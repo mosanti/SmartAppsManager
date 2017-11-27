@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/table_header_system_protection"
+        >
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_uninstall"
+            android:key="key_install_unistall_lock"
+            android:title="@string/item_text_lock_app_installer"
+            android:summary="@string/item_text_lock_app_installer_tip"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_incoming_call"
+            android:key="key_incoming_call_lock"
+            android:title="@string/item_text_incoming_call"
+            android:summary="@string/item_text_lock_incoming_call_tip"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_recent_tasks"
+            android:key="key_recent_tasks_lock"
+            android:title="@string/item_text_lock_recent_tasks"
+            android:summary="@string/item_text_lock_recent_tasks_tip"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="switcher_lock"
+        android:title="@string/table_header_switch_lock">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_wifi"
+            android:key="key_wifi_lock"
+            android:title="@string/item_text_lock_wifi_switch"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:icon="@drawable/ic_bluetooth"
+            android:key="key_bt_lock"
+            android:title="@string/item_text_lock_bluetooth_switch"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

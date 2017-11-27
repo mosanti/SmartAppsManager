@@ -1,0 +1,50 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Wallpaper">
+            
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme"  parent="android:Theme.DeviceDefault.Light.DarkActionBar">
+        <item name ="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/background_center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/Theme.PopupMenu</item>
+    </style>
+
+
+    <style name="mainTabs_radio">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="AppTheme.White">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="AppTheme.blue">
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    </style>
+    <style name="Theme.PopupMenu"
+           parent="@android:style/Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/popup_menu_bg</item>
+    </style>
+    <style name="SplashActivityTheme">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

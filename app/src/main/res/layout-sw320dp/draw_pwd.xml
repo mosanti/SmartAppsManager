@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:id="@+id/front_surfaceview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/multi_tv_token_time_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="@string/plz_draw_code"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+    
+    <com.tcl.smartapp.token.LocusPassWordView
+        android:id="@+id/mPassWordView"
+        android:layout_marginTop="130dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:id="@+id/forgot_password_button"
+        android:textSize="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/fingerprint_indicator"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+           android:visibility="gone"
+        android:src="@drawable/img_fingerprint"/>
+</RelativeLayout>
+

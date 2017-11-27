@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="5.0dp">
+
+        <TextView
+            android:id="@+id/feedback_recode"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="0.45"
+            android:layout_gravity="center"
+            android:background="@drawable/mm_edit_focused"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:textColor="#ff333333"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/feedback_backbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_start_selector"
+            android:orientation="vertical"
+            android:padding="10.0dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/img_empty_apps"/>
+
+    <TextView
+            android:id="@+id/TextV_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+        android:gravity="center"
+            android:text="@string/text_loading"
+        android:textColor="@android:color/black"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/emptyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/img_empty_apps" />
+        <TextView
+            android:id="@+id/TextV_emptyAppLocked"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/text_emptyAppLocked"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+    <Button
+            android:id="@+id/btn_startAppLock"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/btn_start_selector"
+            android:text="@string/btn_startAppLock" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hasLockedAppLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/ll_appinfo"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:gravity="center_vertical"
+            android:background="@color/tabbar_Color"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_appLockInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:text="@string/text_appLockInfo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/appInfoTextSize" />
+            <TextView
+                android:id="@+id/tv_appsort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="@string/text_appsorted_name"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/appInfoTextSize" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FF757575" />
+        <ListView
+            android:id="@+id/lv_app"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

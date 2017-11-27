@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="lock_status"
+        android:title="@string/lock_status"/>
+
+    <PreferenceCategory
+        android:title="@string/lock_settings">
+
+        <PreferenceScreen
+            android:key="change_lock_style"
+            android:title="@string/change_lock_type"/>
+
+        <PreferenceScreen
+            android:key="set_retrieve_passwrod_method"
+            android:title="@string/item_text_forgot_password"
+            android:summary="@string/item_summery_forgot_password"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="lock_Self"
+            android:title="@string/lock_Self"
+            android:summary="@string/lock_Self_summery"/>
+        <PreferenceScreen
+            android:defaultValue="false"
+            android:key="key_warning_camera"
+            android:summary="@string/item_comment_enable_break_in_alerts"
+            android:title="@string/title_message_break_in_alerts"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_do_not_uninstall"
+            android:summary="@string/item_text_device_admin_tip"
+            android:title="@string/item_text_device_admin"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/table_header_settings_applock">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="key_applock_relock_after_screen_off"
+            android:summary="@string/summary_relock_after_top_activity_change"
+            android:title="@string/title_relock_after_screen_off"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/more_settings_title">
+    <PreferenceScreen
+        android:key="key_version_update"
+        android:title="@string/app_version_update" />
+    <PreferenceScreen
+        android:key="key_app_features_explain"
+        android:title="@string/features_explain" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

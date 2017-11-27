@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:id="@+id/textView4"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/questionText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center|center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/answerText"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="24dp"
+        android:gravity="center|center_horizontal"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.21"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:id="@+id/cancelButton"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="24dp"/>
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:id="@+id/okButton"
+            android:textSize="24dp"/>
+    </LinearLayout>
+</LinearLayout>

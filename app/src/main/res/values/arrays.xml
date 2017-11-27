@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    below infor is a record, means orange_package, need check related_package
+    for app lock
+     {orange_package_name_arrays, related_package_name_arrays}
+     -->
+
+    <string-array name="orange_package_name_arrays" translatable="false" >
+        <item>com.facebook.katana</item>
+    </string-array>
+
+    <string-array name="related_package_name_arrays" translatable="false" >
+        <item>com.facebook.appmanager</item>
+    </string-array>
+</resources>

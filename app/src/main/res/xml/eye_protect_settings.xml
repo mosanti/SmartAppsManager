@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="eye_protect"
+        android:title="@string/protect_eye" />
+
+    <com.tcl.smartapp.view.SeekBarPreference
+        android:dependency="eye_protect"
+        android:key="filter_transparency"
+        android:max="100"
+        android:title="@string/filter_transparency" />
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/color">
+        <com.tcl.smartapp.view.SeekBarPreference
+            android:dependency="eye_protect"
+            android:key="filter_red"
+            android:max="255"
+            android:title="@string/filter_red" />
+
+        <com.tcl.smartapp.view.SeekBarPreference
+            android:dependency="eye_protect"
+            android:key="filter_green"
+            android:max="255"
+            android:title="@string/filter_green" />
+
+        <com.tcl.smartapp.view.SeekBarPreference
+            android:dependency="eye_protect"
+            android:key="filter_blue"
+            android:max="255"
+            android:title="@string/filter_blue" />
+    </PreferenceScreen>
+</PreferenceScreen>

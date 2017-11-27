@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="tabbar_textColor">#FF757575</color>
+    <color name="tabbar_Color">#35ffffff</color>
+    <color name="tabbar_pressed_textColor">#FF48B3FF</color>
+    <color name="tab_bar_background">#a50000ac</color>
+    <color name="background_center">#f5ededed</color>
+    <color name="colorPrimary">#FF3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionbar_color">#ffc107</color>
+    <color name="statuebar_color">#ffa000</color>
+    <color name="tabbar_divideline_color">#00000000</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="system_lock_bg">#c19cbdd9</color>
+    <color name="unlock_tips_color">#f5f58217</color>
+    <color name="splash_color">#5b73f5</color>
+</resources>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能应用管家</string>
+
+    <string name="app_lock">应用锁</string>
+    <string name="system_lock">系统锁</string>
+    <string name="pics_video_lock">图片视频锁</string>
+    <string name="hide_apps">应用冷藏室</string>
+    <string name="protect_eye">护眼模式</string>
+    <string name="message_tts">语音播报</string>
+    <string name="settings">设置</string>
+    <string name="user_center">用户中心</string>
+    <string name="user_email">shengyang.mo@tcl.com</string>
+    <string name="exit_app_tip">再按一次退出程序</string>
+    <string name="text_emptyAppLocked">没有开启应用锁！</string>
+    <string name="text_empty_picsvideo_view_slogon">为任何图片视频加锁！</string>
+    <string name="btn_startAppLock">立刻开启保护</string>
+    <string name="item_text_lock_app_installer">安装/卸载</string>
+    <string name="item_text_lock_app_installer_tip">防止安装或卸载应用</string>
+    <string name="item_text_lock_incoming_call_tip">防止他人接听来电</string>
+    <string name="item_text_incoming_call">来电</string>
+    <string name="item_text_lock_recent_tasks">最近使用</string>
+    <string name="item_text_lock_recent_tasks_tip">防止私密应用的截图泄露在最近使用中</string>
+    <string name="table_header_switch_lock">开关锁</string>
+    <string name="item_text_lock_wifi_switch">Wi-Fi</string>
+    <string name="item_text_lock_bluetooth_switch">蓝牙</string>
+    <string name="table_header_system_protection">系统保护</string>
+    <string name="has_no_phone_permission">请开启访问手机状态和联系人权限！</string>
+    <string name="text_loading">加载中......</string>
+    <string name="text_appLockInfo">%s个应用已锁定</string>
+    <string name="text_appsorted_name">名称排序</string>
+    <string name="text_appsorted_locked">锁定排序</string>
+    <string name="text_app_locked">已锁定</string>
+    <string name="text_app_unlocked">未锁定</string>
+    <string name="accessibility_description">
+        请打开右上角的开关。↗\n\n
+        启用本服务之后：\n
+        1. 应用锁可以使用，保护您的私密应用。\n
+        2. 可以保护您的系统相关设置状态，防止被他人篡改。\n\n
+        我们不会用该服务记录任何用户信息！
+</string>
+    <string name="accessibility_prompt_title">"启用辅助功能"</string>
+    <string name="accessibility_prompt_content">"应用锁需要辅助功能来窗口状态，点击确定设置窗口辅助功能。"</string>
+    <string name="ok">"确定"</string>
+    <string name="cancel">"取消"</string>
+
+    <string name="plz_draw_code">绘制图案以解锁</string>
+    <string name="confirm_old_pattern">确认旧的解锁图案</string>
+    <string name="draw_new_pattern">绘制新的解锁图案</string>
+    <string name="confirm_new_pattern">再次确认新的解锁图案</string>
+    <string name="display_new_pattern">你的新解锁图案</string>
+    <string name="set_locus_token_success">解锁图案设置成功!</string>
+    <string name="two_locus_different">两次绘制的图案不同，请重新绘制.</string>
+    <string name="pls_try_again">对不起，请重试!</string>
+    <string name="set_pattern_password">设置图案锁</string>
+    <string name="table_header_settings_applock">应用锁设置</string>
+    <string name="title_relock_after_screen_off">灭屏后重新锁定</string>
+    <string name="summary_relock_after_screen_off">灭屏后重新锁定</string>
+    <string name="summary_relock_after_top_activity_change">应用切换后重新锁定</string>
+    <string name="AccessibilityService_closed">智能应用管家的辅助服务被关闭了</string>
+
+    <string name="lockpassword_input_pin_password">输入4位数字密码</string>
+    <string name="lockpassword_input_your_pin_header">输入旧的数字密码</string>
+    <string name="lockpassword_choose_your_pin_header">设置新的4位数字密码</string>
+    <string name="lockpassword_confirm_your_pin_header">确认密码</string>
+    <string name="lockpassword_ok_label">确  定</string>
+    <string name="lockpassword_confirm_pins_dont_match">密码错误</string>
+    <string name="lockpassword_continue_label">继  续</string>
+    <string name="lockpassword_illegal_character">密码包含非法字符.</string>
+    <string name="lockpassword_pin_contains_non_digits">密码只能包含0~9之间的数字.</string>
+    <string name="lockpassword_press_continue">请按\'继续\'按钮</string>
+    <string name="lockpassword_press_ok">请按\'确定\'按钮</string>
+    <string name="lockpassword_cancel_label">取  消</string>
+    <string name="lockpassword_pin_title">设置密码</string>
+    <string name="set_pin_password_success">PIN设置成功!</string>
+    <string name="set_pin_password">设置PIN锁</string>
+    <string name="lockpassword_check_pin_title">校验密码</string>
+
+    <string name="change_lock_type">修改锁类型</string>
+    <string name="pin_lock_type">PIN锁</string>
+    <string name="pattern_lock_type">图案锁</string>
+    <string name="current_lock_type">当前锁类型</string>
+
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="engine_type_entries">
+        <item>在线合成</item>
+        <item>本地合成</item>
+    </string-array>
+    <string-array name="engine_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string name="Tts_settings">语音播报设置</string>
+    <string name="app_id">570514cf</string>
+    <string name="tts_toast_format" formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
+    <string name="tts_voicer_fail_tip">合成类型已设置为本地合成，请到讯飞语记中设置发音人！</string>
+    <string name="incomingcall_text">%s来电</string>
+    <string name="tts_play_start">开始播放</string>
+    <string name="tts_play_pause">暂停播放</string>
+    <string name="tts_play_resume">继续播放</string>
+    <string name="tts_prf_enable_title">语音播报功能</string>
+    <string name="tts_prf_enable_summery">开启或关闭语音播报功能</string>
+    <string name="tts_prf_engine_title">合成类型</string>
+    <string name="tts_prf_voicer_title">发音人</string>
+    <string name="tts_prf_speed_dialog_title">请输入语速:在线(0-100),本地(0-200)</string>
+    <string name="tts_prf_speed_title">语速</string>
+    <string name="tts_prf_pitch_dialog_title">请输入音调(0-100)</string>
+    <string name="tts_prf_pitch_title">音调</string>
+    <string name="tts_prf_volume_dialog_title">请输入音量(0-100)</string>
+    <string name="tts_prf_volume_title">音量</string>
+    <string name="tts_prf_stream_title">音频流类型</string>
+
+    <string name="filter_transparency">透明度</string>
+    <string name="color">颜色</string>
+    <string name="filter_red">红色</string>
+    <string name="filter_green">绿色</string>
+    <string name="filter_blue">蓝色</string>
+    <string name="filter_notification_content">点击调整滤镜颜色</string>
+
+    <string name="text_empty_app_view_slogon">把不常使用的应用进行冷藏！</string>
+    <string name="text_start_disabled_app">立刻开启冷藏功能</string>
+    <string name="text_disabled_app">应用冷藏室</string>
+
+    <string name="progress_dialog_title">"加载中......"</string>
+    <string name="progress_dialog_message">"请稍等"</string>
+
+    <string name="personal_apps_title">"安装应用"</string>
+    <string name="system_apps_title">"系统应用"</string>
+    <string name="enable_app">"解冻应用"</string>
+    <string name="app_info">"应用信息"</string>
+    <string name="app_disable_flag_text">"已冷藏"</string>
+    <string name="add_disabled_app">"添加"</string>
+    <string name="sms_coming_text">%s 发来短信。</string>
+    <string name="disable_app_permission_tips">智能应用管家没有相关权限，请提高应用为系统级别！</string>
+    <string name="uninstall_button_text">卸载</string>
+    <string name="install_button_text">安装</string>
+    <string name="accessibility_popup_title">停用智能应用管家</string>
+
+    <string name="retrieve_password">获取密码</string>
+    <string name="retrieve_password_method">获取密码方式</string>
+    <string name="email_authentication">邮件认证</string>
+    <string name="mobile_authentication">短信认证</string>
+    <string name="question_and_answer">问题应答</string>
+    <string name="method_description">如果你忘记密码，可以通过短信认证或者回答安全问题进行密码重置。</string>
+    <string name="question">问题:</string>
+    <string name="answer">答案:</string>
+    <string name="email_address">邮箱地址:</string>
+    <string name="mobile_number">手机号码:</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="email_address_error">请输入正确的邮箱地址</string>
+    <string name="mobile_number_error">请输入正确的手机号码</string>
+    <string name="question_answer_empty">问题或者答案不能为空</string>
+    <string name="unlock_right_text">恭喜，解锁正确！</string>
+    <string name="input_pin_tip_text">输入PIN码以解锁</string>
+    <string name="lock_status">锁定状态</string>
+    <string name="lock_settings">基本设置</string>
+    <string name="title_message_break_in_alerts">闯入警报</string>
+    <string name="item_title_enable_break_in_alerts">启用闯入警报</string>
+    <string name="item_comment_enable_break_in_alerts">解锁失败后，闯入警报将会拍照</string>
+    <string name="item_text_device_admin">防止被卸载</string>
+    <string name="item_text_device_admin_tip">设置为设备管理器以防止智能应用管家被卸载</string>
+    <string name="item_text_forgot_password">找回密码</string>
+    <string name="item_summery_forgot_password">忘记密码时帮您找回</string>
+    <string name="description_device_admin">防止智能应用管家被恶意卸载</string>
+    <string name="description_device_admin2">更好地保护您的应用，防止智能应用管家被恶意卸载!</string>
+    <string name="warner_title">查看闯入者</string>
+    <string name="warner_summery">这里有闯入者的照片，最多保留50张</string>
+    <string name="settings_password_type">设置密码类型</string>
+    <string name="draw_unlock_password">绘制解锁图案</string>
+    <string name="registered_mobile">你注册的手机号码是</string>
+    <string name="send_sms">发送验证码</string>
+    <string name="input_auth_code">输入验证码</string>
+    <string name="send_sms_success">验证码已经发送到您的手机</string>
+    <string name="auth_code_error">校验码错误，请重新输入！</string>
+    <string name="send_auth_code_first">请先发送验证码！</string>
+    <string name="auth_code_wrong">验证码错误，请重新输入！</string>
+    <string name="answer_wrong">答案错误，请重新输入！</string>
+    <string name="send_auth_code">正在发送验证码到邮箱：</string>
+    <string name="no_question">您还没有设置问题，无法重置密码！</string>
+    <string name="no_answer">您还没有设置答案，无法重置密码！</string>
+    <string name="answer_invalid">答案不能为空！</string>
+    <string name="app_settings">设置</string>
+    <string name="fingerprint_success">指纹解锁成功！</string>
+    <string name="fingerprint_fail">指纹解锁失败！</string>
+    <string name="tts_settings">语音播报设置</string>
+    <string name="splash_content">为您的系统保驾护航</string>
+    <string name="copyright">Copyright ©2016 TCT Mobile</string>
+    <string name="registered_email_address">你注册的邮箱是</string>
+    <string name="send_email">发送验证码</string>
+    <string name="send_email_success">验证码已经发送到您的邮箱</string>
+    <string name="send_email_error">邮件发送出错</string>
+    <string name="share_text">智能应用管家(SmartAppManager)，该应用具备应用锁，系统锁，图片视频锁，应用冷藏，护眼模式，信息语音播报等功能,可以帮助手机上锁，守住隐私，优化系统,为您的系统保驾护航。可以通过以下链接下载并安装，"https://www.tclmobile.com/SmartAppManager.apk"</string>
+    <string name="share_subject">应用管家分享</string>
+    <string name="share_title">  分享内容：</string>
+    <string name="share_app_title">邀请好友</string>
+
+    <string name="encrypting_prompt">加密中...</string>
+    <string name="deencrypting_prompt">解密中...</string>
+    <string name="waiting_prompt">请稍等...</string>
+    <string name="file_picker_prompt">请选择文件!</string>
+    <string name="filemanager_install_prompt">请安装文件管理器</string>
+    <string name="sd_card_permission_prompt">添加隐藏失败，系统权限问题，导致不能处理外置SD卡上的文件，请升级为系统级应用！</string>
+    <string name="file_no_exist">该文件已不存在！</string>
+    <string name="file_in_listview">该文件已经再隐藏列表中.</string>
+    <string name="encrypt_success">该文件加密完成.</string>
+    <string name="deencrypt_success">该文件解密完成.</string>
+    <string name="no_need_deencrypt">该文件并不是加密文件，无需解密！</string>
+    <string name="no_support_file_style">目前不支持该格式文件直接访问！</string>
+    <string name="numbers_file_choose">您选择了%s个文件</string>
+    <string name="one_file_is_choose">"你选择了1个文件".</string>
+    <string name="zero_file_is_choose">"你选择了0个文件".</string>
+    <string name="notice_title">注意：</string>
+    <string name="delete_encrypt_file_prompt">你确定要删除选中的媒体文件吗？(如果删除前未解密，文件会丢失！)</string>
+    <string name="deleting_prompt">删除中...</string>
+    <string name="no_file_is_choose">未选中任何文件！</string>
+    <string name="remove_encrypt_file_prompt">你确定要移除选中的媒体文件吗？(移除后，文件会恢复解密！)</string>
+    <string name="removing_prompt">移除中...</string>
+    <string name="cancle_all_success">全部取消成功</string>
+    <string name="choose_all_success">全部选择成功</string>
+    <string name="write_permission_prompt">系统文件不存在，创建失败，请确认是否已打开文件读写权限！</string>
+
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_hint">您好，欢迎您反馈使用产品的感受和建议！</string>
+    <string name="contact_title"> 联系方式：</string>
+    <string name="feedback_contact_hint">邮箱/QQ</string>
+    <string name="confirm"> 提交</string>
+    <string name="request_content_empty"> 请输入反馈意见，谢谢！</string>
+    <string name="request_contact_empty"> 请输入联系方式，谢谢！</string>
+    <string name="waiting">正在处理，请稍等片刻…</string>
+    <string name="feedback_success">发送成功</string>
+    <string name="feedback_failed">发送失败</string>
+    <string name="feedback_thanks">感谢您的意见反馈，您的支持是我的动力！</string>
+    <string name="networks_failed">当前网络异常!</string>
+    <string name="back">返回</string>
+    <string name="feedback_reply_title">查看意见反馈</string>
+    <string name="developer">开发者：</string>
+    <string name="have">有 </string>
+    <string name="new_reply"> 条新回复</string>
+    <string name="receive_new_reply">接收到了开发者的新回复</string>
+    <string name="fb_notification_title">开发者回复您的反馈：</string>
+    <string name="feedback_recoder_title">意见反馈记录</string>
+    <string name="no_feedback_recoder">暂时没有反馈记录,如您对我们的产品有任何意见或建议，请您向我们反馈，感谢您对我们的支持！</string>
+    <string name="select_all">全选</string>
+    <string name="unselect_all">取消全选</string>
+    <string name="delete">删除</string>
+    <string name="del_list_empty">请选择需要删除的文件。</string>
+    <string name="confirmDelTitle">确认删除</string>
+    <string name="confirmDelMessage">确认删除%s个文件？</string>
+    <string name="warning_pic_viewer_empty">没有闯入者</string>
+
+    <string name="more_settings_title">更多设置</string>
+    <string name="features_explain">关于应用</string>
+    <string name="app_version_update">版本更新</string>
+    <string name="app_version_name_title">版本号：</string>
+    <string name="soft_update_no">目前已是最新版本，无需更新！</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="new_version_name_title">新版本号：</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗？</string>
+    <string name="soft_update_updatebtn">马上更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">更新</string>
+    <string name="soft_update_cancel">取消更新</string>
+    <string name="soft_update_error_code">请求更新失败！\n更新错误码：</string>
+    <string name="no_wifi">目前处于非wifi网络状态，是否继续检测下载/更新？</string>
+    <string name="notice_dialog_title">"警告："</string>
+
+    <string name="password_error_beyond_max_count">"错误次数太多"</string>
+    <string name="lock_Self">启动本程序锁定</string>
+    <string name="lock_Self_summery">更好地保护应用的设置</string>
+    <!-- clear_data_button_text translation need follow com.android.settings -->
+    <string name="clear_data_button_text">清除数据</string>
+    <string name="accessibility_disabled">辅助功能没有开启！</string>
+    <string name="lock_status_disabled">锁定状态没有开启！</string>
+    <string name="cancel_active_adim">取消激活</string>
+</resources>

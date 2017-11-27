@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/empty_disabled_app_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/disabled_app_empty"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/text_empty_app_view_slogon"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btn_start_disabled_app"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/btn_start_selector"
+        android:text="@string/text_start_disabled_app"
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/disabled_app_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:verticalSpacing="40dip"
+            android:horizontalSpacing="10dip"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:numColumns="4" >
+        </GridView>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background = "@color/tabbar_divideline_color"/>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="left"
+            android:background="@color/tabbar_Color"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/mainTabs_app_lock"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:drawableTop="@drawable/apps_protected_btn"
+                android:text="@string/app_lock"
+                android:scaleType="fitXY"   
+                android:textColor="@drawable/tabhost_text_color" />
+
+            <RadioButton
+                android:id="@+id/mainTabs_system_lock"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:scaleType="fitXY" 
+                android:drawableTop="@drawable/system_protected_btn"
+                android:text="@string/system_lock"
+                android:textColor="@drawable/tabhost_text_color" />
+
+
+
+            <RadioButton
+                android:id="@+id/mainTabs_pics_video_lock"
+                style="@style/mainTabs_radio"
+                android:button="@null"
+                android:scaleType="fitXY" 
+                android:drawableTop="@drawable/protect_eye_btn"
+                android:text="@string/pics_video_lock"
+                android:textColor="@drawable/tabhost_text_color" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+</TabHost>
